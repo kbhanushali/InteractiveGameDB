@@ -9,11 +9,11 @@ var express = require('express')
 var app = express();
 
 // all environments
-app.set('port', 80);
-
-app.use(express.static(__dirname + '/views'));
-app.use(express.static('./public'));
-app.use('/public', express.static(path.resolve('./public')));
+app.set('port', process.env.PORT || 3000);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.use(express.bodyParser());
+app.use(express.methodOverride());
 
 var db;
 
@@ -26,9 +26,37 @@ mongoClient.connect("mongodb://"+config.mongo.user_name+":"+config.mongo.passwor
   db = database;
 });
 
-app.get("/", function(req, res) {
-	res.render("index");
+
+//----------game Page Home Catalog-------------
+app.get("/gameCatalog", function(req, res){
+	var collection = db.collection('games');
+	collection.find().toArray(function(err, results) {
+		res.render('categories', { products: results });
+	});
 });
+
+
+//----------Redirect to each category page---------------
+app.get("/gameCatalog/:category",	function(req, res) {
+		var categoryLocal = req.params.category;
+		var collection = db.collection('games');
+		collection.find({category: categoryLocal}).toArray(function(err, results) {
+			res.render('gameCategory', { games: results, categoryName: categoryLocal});
+		});
+});
+
+
+//----------Redirect to each product page-------------
+app.get("/gameCatalog/:category/:gameId",	function(req, res) {
+		var categoryLocal = req.params.category;
+		var productIdLocal = req.params.productId;
+		var collection = db.collection('games');
+		
+		collection.find({productCategory: categoryLocal, productId: productIdLocal}).toArray(function(err, results) {
+			res.render("gameDetails", {product : results[0]});
+		});
+});
+
 
 
 http.createServer(app).listen(app.get('port'), function(){

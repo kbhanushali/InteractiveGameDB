@@ -3,7 +3,7 @@
 
 <head>
 
-    <link href="images/favicon.png" type="image/x-icon" rel="shortcut icon"/>
+<link href="images/favicon.png" type="image/x-icon" rel="shortcut icon"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,13 +13,13 @@
     <title>GamerZone Inc.</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="/css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -112,100 +112,150 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
     </nav>
 
+    <!-- Image Background Page Header -->
+    <!-- Note: The background image is set within the business-casual.css file. -->
+    <header class="business-header">      
+    </header>
 
     <!-- Page Content -->
     <div class="myBackground container">
 
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">WebStarter Blog
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">WebStarter Blog</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
         <div class="row">
 
-            <div class="col-md-12">
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
 
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/1200x300" alt="">
-                    <div class="caption-full">
-                        <h4 class="pull-right">$24.99</h4>
-                        <h4><a href="#">Product Name</a>
-                        </h4>
-                        <p>See more snippets like these online store reviews at <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                        <p>Want to make these reviews work? Check out
-                            <strong><a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-                            </strong>over at maxoffsky.com!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <!-- First Blog Post -->
+                <h2>
+                    <a href="#">Because it's Friday: Face/On</a>
+                </h2>
+                <p class="lead">
+                    by <a href="#">Revolution Analytics</a>
+                </p>
+                <p><i class="fa fa-clock-o"></i> Posted on October 23, 2015 at 10:00 PM</p>
+                <hr>
+                <a href="blog-post.html">
+                    <img class="img-responsive img-hover" src="images/blog1.jpg" alt="">
+                </a>
+                <hr>
+                <p>Imagine taking one person's body and face, and then being able to make them speak using someone else's voice -- and their mouth movements and facial expressions, too. That's now possible to do in...</p>
+                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                <hr>
+
+                <!-- Second Blog Post -->
+                <h2>
+                    <a href="#">Converting arbitrary R expressions to PMML</a>
+                </h2>
+                <p class="lead">
+                    by <a href="#">Zementis</a>
+                </p>
+                <p><i class="fa fa-clock-o"></i> Posted on October 23, 2015 at 10:45 PM</p>
+                <hr>
+                <a href="blog-post.html">
+                    <img class="img-responsive img-hover" src="images/blog2.jpg" alt="">
+                </a>
+                <hr>
+                <p>Converting arbitrary R expressions to PMML code{white-space: pre;}table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode { margin: 0; padding: 0; vertical-align: baseline; border: none; }..</p>
+                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                <hr>
+
+                <!-- Third Blog Post -->
+                <h2>
+                    <a href="#">Coffee with a Googler: Bullet Time with the Cloud Spin Team</a>
+                </h2>
+                <p class="lead">
+                    by <a href="#">Laurence Moroney, Developer Advocate</a>
+                </p>
+                <p><i class="fa fa-clock-o"></i> Posted on October 23, 2015 at 10:45 PM</p>
+                <hr>
+                <a href="blog-post.html">
+                    <img class="img-responsive img-hover" src="images/blog3.png" alt="">
+                </a>
+                <hr>
+                <p>As part of Google Cloud Platform’s Next roadshow, the team decided to make a demo that anybody could get involved in, and the concept of Google Cloud Spin was born. The idea, influenced by the ”bullet time” scenes from The Matrix was simple -- build a rig of cameras, have them take a number of pictures, and stitch them together into an animated GIF ...</p>
+                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Search</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
                     </div>
-                    <div class="ratings">
-                        <p class="pull-right">3 reviews</p>
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            4.0 stars
-                        </p>
-                    </div>
+                    <!-- /.input-group -->
                 </div>
 
+                <!-- Blog Categories Well -->
                 <div class="well">
-
-                    <div class="text-right">
-                        <a class="btn btn-success">Leave a Review</a>
-                    </div>
-
-                    <hr>
-
+                    <h4>Categories</h4>
                     <div class="row">
-                        <div class="col-md-12">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            Anonymous
-                            <span class="pull-right">10 days ago</span>
-                            <p>This product was great in terms of quality. I would definitely buy another!</p>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Mobile</a>
+                                </li>
+                                <li><a href="#">iOS</a>
+                                </li>
+                                <li><a href="#">Android</a>
+                                </li>
+                                <li><a href="#">BigData</a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            Anonymous
-                            <span class="pull-right">12 days ago</span>
-                            <p>I've alredy ordered another one!</p>
+                        <!-- /.col-lg-6 -->
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Internet of Things</a>
+                                </li>
+                                <li><a href="#">Sensors</a>
+                                </li>
+                                <li><a href="#">Web UI design</a>
+                                </li>
+                                <li><a href="#">Data Mining</a>
+                                </li>
+                            </ul>
                         </div>
+                        <!-- /.col-lg-6 -->
                     </div>
+                    <!-- /.row -->
+                </div>
 
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            Anonymous
-                            <span class="pull-right">15 days ago</span>
-                            <p>I've seen some better than this, but not at this price. I definitely recommend this item.</p>
-                        </div>
-                    </div>
-
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>About WebStarter Blog</h4>
+                    <p>The mission of this blog is to encourage a sharing of ideas and innovations related to big data, internet of things and mobile technologies. Categories like iOS, Android, text mining, sentiment analysis, sensor, real-time trackig.</p>
                 </div>
 
             </div>
 
         </div>
-
+        <!-- /.row -->
     </div>
-    <!-- /.container -->
 
     <!-- Footer and Social media -->
     <footer class="myBackground container">
@@ -248,8 +298,6 @@
 
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
     </script>
-
-
 </body>
 
 </html>
