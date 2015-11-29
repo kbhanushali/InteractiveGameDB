@@ -27,6 +27,11 @@ mongoClient.connect("mongodb://"+config.mongo.user_name+":"+config.mongo.passwor
 });
 
 
+app.get("/", function(req, res){
+		res.render('index');
+});
+
+
 //----------game Page Home Catalog-------------
 app.get("/gameCatalog", function(req, res){
 	var collection = db.collection('games');
