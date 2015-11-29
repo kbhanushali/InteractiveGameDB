@@ -1,7 +1,14 @@
 {
-  "name": "sample",
+  "name": "Game DB",
   "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "forever start app.js"
+  },
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "3.2.6",
+    "mongodb":"*",
+    "ejs": "*",
+    "body-parser": "*"
   }
 }
