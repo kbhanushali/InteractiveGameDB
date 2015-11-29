@@ -15,6 +15,24 @@ app.set('view engine', 'ejs');
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 
+/*** ROBOTS.TXT ****/
+
+app.use(function (req, res, next) {
+    if ('/robots.txt' == req.url) {
+        res.type('text/plain')
+        res.send("User-agent: *\nDisallow: /");
+    } else {
+        next();
+    }
+});
+
+app.get('/robots.txt', function (req, res) {
+    res.type('text/plain');
+    res.send("User-agent: *\nDisallow: /");
+});
+
+/***********/
+
 var db;
 
 /*
