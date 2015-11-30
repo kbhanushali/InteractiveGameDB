@@ -36,6 +36,12 @@ app.get('/robots.txt', function (req, res) {
 });
 
 
+/********** SITEMAP ***************/
+
+app.get('/sitemap.xml', function (req, res) {
+    res.type('text/xml');
+    res.send("sitemap.xml");
+});
 
 
 
@@ -57,6 +63,15 @@ app.get("/", function(req, res){
 		res.render('index');
 });
 
+app.get("/management", function(req, res){
+		res.render('management');
+});
+app.get("/blog", function(req, res){
+		res.render('blog');
+});
+app.get("/location", function(req, res){
+		res.render('location');
+});
 
 //----------game Page Home Catalog-------------
 app.get("/gameCatalog", function(req, res){
