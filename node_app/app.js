@@ -21,17 +21,36 @@ app.use(function (req, res, next) {
     if ('/robots.txt' == req.url) {
         res.type('text/plain')
         res.send("User-agent: *\nDisallow: /");
+    } else if res.type('text/xml' == req.url) {
+    	res.type('text/xml')
+    	res.send("sitemap.xml"); 
     } else {
         next();
     }
 });
+
+
+/**********/
 
 app.get('/robots.txt', function (req, res) {
     res.type('text/plain');
     res.send("User-agent: *\nDisallow: /");
 });
 
-/***********/
+
+/********** SITEMAP ***************/
+
+app.get('/sitemap.xml', function (req, res) {
+    res.type('text/xml');
+    res.send("sitemap.xml");
+});
+
+
+/************************/
+
+
+
+
 
 var db;
 
