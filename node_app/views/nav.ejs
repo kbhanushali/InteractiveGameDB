@@ -74,8 +74,8 @@
                     <li>
                         <a href="/blog">Community</a>
                     </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                    <li id="logindiv" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
                         <ul id="login-dp" class="dropdown-menu">
                             <li>
                                  <div class="row">
@@ -97,7 +97,7 @@
                                                          <div class="help-block text-right"><a href="">Forget the password ?</a></div>
                                                     </div>
                                                     <div class="form-group">
-                                                         <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                         <button type="submit" onclick="function{$('#logindiv').hide(); $('#profilediv').show();}();"class="btn btn-primary btn-block">Sign in</button>
                                                     </div>
                                                     <div class="checkbox">
                                                          <label>
@@ -110,6 +110,24 @@
                                             New here ? <a href="#"><b>Join Us</b></a>
                                         </div>
                                  </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="profilediv" style="display:none;" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Josh</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                            <div class="row">
+                                <div class="profile-header-container">   
+                                    <div class="profile-header-img">
+                                        <img class="img-circle" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" />
+                                        <!-- badge -->
+                                        <div class="rank-label-container">
+                                            <span class="label label-default rank-label">Rank #100</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
                             </li>
                         </ul>
                     </li>
