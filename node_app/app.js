@@ -62,7 +62,6 @@ mongoClient.connect("mongodb://"+config.mongo.user_name+":"+config.mongo.passwor
 app.get("/", function(req, res){
 		res.render('index');
 });
-
 app.get("/management", function(req, res){
 		res.render('management');
 });
@@ -71,6 +70,9 @@ app.get("/blog", function(req, res){
 });
 app.get("/location", function(req, res){
 		res.render('location');
+});
+app.get("/contact", function(req, res){
+		res.render('contact_us');
 });
 
 //----------game Page Home Catalog-------------
