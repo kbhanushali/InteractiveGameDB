@@ -1,129 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-  <meta name="google-site-verification" content="2xgYaY7E9v3e9DecFp_MsonyEJavjSWHUuSmOvnyNR0" />
-    <link href="images/favicon.png" type="image/x-icon" rel="shortcut icon"/>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="CMPE 280 team alpha game catalog site.">
-    <meta name="keywords" content="Games,CMPE280,TeamAlpha,takvjgames">
-    <meta name="author" content="">
-
-    <title>GamerZone Inc.</title>
-
-
-    <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="/css/custom.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="/css/modern-business.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
+<%- include header.ejs %>
 
 <body>
 
-     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    GamerZone Inc.
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                <li>
-                        <a href="#">Login</a>
-                    </li>
-                    <li>
-                        <a href="#">Sign Up</a>
-                    </li>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="gameCatalog/action">Action</a>
-                            </li>
-                            <li>
-                                <a href="gameCatalog/adventure">Adventure</a>
-                            </li>
-                            <li>
-                                <a href="gameCatalog/indie">Indie</a>
-                            </li>
-                            <li>
-                                <a href="gameCatalog/sports">Sports</a>
-                            </li>
-                            <li>
-                                <a href="gameCatalog/roleplaying">Role-Playing</a>
-                            </li>
-                            <li>
-                                <a href="gameCatalog/shooter">Shooter</a>
-                            </li>
-                            <li>
-                                <a href="gameCatalog/simulation">Simulation</a>
-                            </li>
-                            <li>
-                                <a href="gameCatalog/strategy">Strategy</a>
-                            </li>
-                            <li>
-                                <a href="gameCatalog/mac">Mac Games</a>
-                            </li>
-                            <li>
-                                <a href="gameCatalog/linux">Linux Games</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="/management">Team</a>
-                            </li>
-                            <li>
-                                <a href="/location">Stores</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/blog">Community</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+<%- include nav.ejs %>
 
     <!-- Image Background Page Header -->
     <!-- Note: The background image is set within the business-casual.css file. -->
@@ -281,49 +163,8 @@
     </div>
     <!-- /.container -->
 
-    <!-- Footer and Social media -->
-    <footer class="myBackground container">
-     	<hr/>
-    	<div class="row">
-        	<div class="col-md-6">
-    			<a class="twitter-timeline" href="https://twitter.com/hashtag/GamerZone" data-widget-id="658396675510177792">#GamerZone Tweets</a>
-    		</div>
 
-    		<div class="col-md-6">
-    			<a class="twitter-timeline" href="https://twitter.com/hashtag/OnlineGames" data-widget-id="658408832608022528">#OnlineGames Tweets</a>
-    		</div>
-    	</div>
- 		<hr/>
-    	<div class="row">
-            <div class="col-lg-12 text-center">
-                <p>Copyright &copy; GameZone Inc. 2016</p>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 3000 //changes the speed
-    })
-    </script>
-
-
-	<script>
-		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-	</script>
-
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-	</script>
-
-
+   <%- include footer.ejs %>
 </body>
 
 </html>
