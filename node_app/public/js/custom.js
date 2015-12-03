@@ -5,7 +5,6 @@ $(document).ready(function () {
 
 
 function checkLoggedIn() {
-    alert("asdasdas");
 	if(localStorage.loggedin == 'josh') {
 		$('#logindiv').hide(); 
     	$('#profilediv').show();
