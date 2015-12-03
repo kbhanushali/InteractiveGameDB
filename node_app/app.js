@@ -88,8 +88,9 @@ app.get("/gameCatalog", function(req, res){
 app.get("/gameCatalog/:category",	function(req, res) {
 		var categoryLocal = req.params.category;
 		var collection = db.collection('games');
+		var view_name = 'gameCategory'+categoryLocal;
 		collection.find({category: categoryLocal}).toArray(function(err, results) {
-			res.render('gameCategory', { games: results, categoryName: categoryLocal});
+			res.render(view_name, { games: results, categoryName: categoryLocal});
 		});
 });
 
