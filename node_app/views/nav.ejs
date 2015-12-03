@@ -97,7 +97,7 @@
                                                          <div class="help-block text-right"><a href="">Forget the password ?</a></div>
                                                     </div>
                                                     <div class="form-group">
-                                                         <button type="submit" onclick="function{$('#logindiv').hide(); $('#profilediv').show();}();"class="btn btn-primary btn-block">Sign in</button>
+                                                         <button type="button" onclick="login();" class="btn btn-primary btn-block">Sign in</button>
                                                     </div>
                                                     <div class="checkbox">
                                                          <label>
@@ -137,3 +137,11 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <script>
+        function login(event){
+            event.preventDefault();
+            $('#logindiv').hide(); 
+            $('#profilediv').show();
+        }
+    </script>
