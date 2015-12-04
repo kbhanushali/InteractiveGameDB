@@ -100,9 +100,9 @@ app.get("/gameCatalog/:category/:gameId",	function(req, res) {
 		var categoryLocal = req.params.category;
 		var productIdLocal = req.params.productId;
 		var collection = db.collection('games');
-		
+		var view_name = 'gameDetails'+categoryLocal;
 		collection.find({productCategory: categoryLocal, productId: productIdLocal}).toArray(function(err, results) {
-			res.render("gameDetails", {product : results[0]});
+			res.render(view_name, {game : results[0]});
 		});
 });
 
